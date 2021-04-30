@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      
+    .progress {
+      margin: -6rem 0rem 0.5rem -5.62rem;
+    }
+
+    .submit-btn {
+      width: 80%;
+    }
+    .mid-right h6 {
+      margin-left: 10.5rem;
+    }
+
+    @media (max-width: 700px){
+
+    .mid-right {
+        margin-bottom: 8rem;
+    }
+    .text-options img {
+      margin-left: 4rem;
+      width: 60%;
+
+    }
+    
+    .submit-btn {
+      width: 90%;
+    }
+    .mid-right h6 {
+      margin-left: 7.2rem;
+    }
+
+    .progress {
+   
+      margin-top: 1rem;
+      margin-left: -3.84rem;
+    }
+ 
+    
+  }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><img src="assets/images/upskillwhite.png"></label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">TRAINNING</a></li>
+        <li><a href="#">VIDEO LESSONS</a></li>
+        <li><a href="#">EARN WITH UPSKILL</a></li>
+        <li><a href="#signin" class="signin active" ><i class="fa fa-fw fa-user-circle"></i>SIGN IN</a></li>
+        <li><button class="signup">SIGN UP</button></li>
+      </ul>
+    </nav>
+
+
+    <div class="mid-part" >
+      <div class="mid-left">
+        <img src="assets/images/adobe-photoshop-2020-latest-version-free-download-for-windows-10.png">
+        <div class="bg-text">
+          <div class="progress">
+            <div class="progress-bar"></div>
+          </div>
+          <button class="design">Graphic Design</button>
+          <h3>Photoshop Quiz<br>Questions And Answers</h3>
+          <p>A short quiz to test how well you know<br>Adobe Photoshop</p>
+          <div class="bottom-part">
+          <div class="bottom-left">
+            <h6>By Bappi Ashraf</h6>
+            <h6>Oct 9th, 06:03:11 PM</h6>
+          </div>
+          <div class="social">
+            <a href="#facebook"><img src="assets/images/facebook-square-brands.svg"></a>
+            <a href="#linkedin"><img src="assets/images/linkedin-brands.svg"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+      <div class="mid-right" >
+        <h5>Question 1 <mark>/ 10</mark></h5>
+        <h4>Why would you get this pop up?</h4>
+        <div class="text-options">
+          <img src="assets/images/1793223770.png">
+          <input class="option-btn active"  value="The layer you are trying to work on is locked">
+          <input class="option-btn"  value="Doesn't matter just close it and try again">
+          <input class="option-btn"  value="Because photoshop is broken">
+        </div>
+        <input class="submit-btn"  value="S U B M I T">
+        <h6 class="btn" v-on:click="nextStep">N E X T  <i class="fa fa-long-arrow-alt-right"></i></h6>
+      </div>
+    </div>
+
+    <div class="footer">
+
+           
+               <div class="card" id="top-left">
+                  
+                       <h3>About us</h3>
+                       <p>Upskill is a peer to peer skill sharing platform. It enables individuals and organizations to share skills and exchange technical knowledge to bridge the skills gap in Bangladesh.<p>
+                        <img src="assets/images/ict.png">
+               </div>
+               <div class="card" id="bottom-right">
+                   
+                       <h3>Helpful Links</h3>
+                       <p>FAQ</p>
+                       <p>Terms and Conditions</p>
+                       <p>Privacy Statement</p>
+                       <p>About Upskill</p>
+
+               </div>
+               <div class="card" id="bottom-left">
+             
+                       <h3>CONTACT</h3>
+                       <p>Upskill Training Center<br>Flat- 4B, House- 516/3, Lane- 10<br>Baridhara DOHS
+                       <p>01727 234132</p>
+                       <p>sanan.upskill@gmail.com</p>
+
+               </div>
+           
+               <div class="card" id="top-right">
+              
+                     <h3 style="margin: -0.1rem 0 1rem -0.1rem;">SUSCRIBE TO OUR NEWSLETTER</h3>
+                     <form action="/action_page.php">
+                        <input type="text" id="email" name="email" placeholder="Type your mail">
+                         <div class="subbutton">
+                            <input type="submit" value="S U B S C R I B E">
+                          </div>
+                     
+                
+                      </form>
+
+             </div>    
+    </div>
+
+
+
+
+
+  </body>
+</html>

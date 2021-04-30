@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+
+.checkmark {
+    display:inline-block;
+    width: 22px;
+    height:22px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    position: relative;
+    
+}
+
+.checkmark_tick_text {
+  right: 2.3rem;
+  top: 0.5rem;
+}
+
+.cross {
+    display:inline-block;
+    width: 22px;
+    height:22px;
+    position: relative;
+    top: -3px;
+    left: -2.3rem;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #D60000;
+    font-size: 0.8em;
+    padding: 3px;
+    font-weight: bold;
+    text-align: center;
+}
+.cross_img {
+  top: -3.5rem;
+  left: -6.5rem;
+}
+
+
+
+
+
+.checkmark_tick_img {
+    right: 6.5rem;
+    bottom: 3rem;
+}
+
+.checkmark_circle {
+    position: absolute;
+    width:22px;
+    height:22px;
+    background-color:#FFFFFF;
+    border-radius:11px;
+    left:0;
+    top:0;
+}
+
+.checkmark_stem {
+    position: absolute;
+    width:3px;
+    height:9px;
+    background-color:#60D91A;
+    left:11px;
+    top:6px;
+}
+
+.checkmark_kick {
+    position: absolute;
+    width:3px;
+    height:3px;
+    background-color:#60D91A;
+    left:8px;
+    top:12px;
+}
+
+
+
+
+
+
+
+
+
+    .progress-bar {
+        width: 100%;
+    }
+    .progress {
+      margin: -2rem 0rem 0.5rem -5.62rem;
+    }
+
+    .bg-text {
+        top: 5.5%;
+      left: 46.3%;
+    }
+
+    .mid-right h3 {
+        color: #000000;
+        font-size: 23px;
+        margin-top: -3rem;
+    }
+    
+    .mid-right h5 {
+        font-size: 16px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .mid-right h4 {
+        font-size: 18px; 
+        margin-bottom: 1rem;
+
+    }
+
+    .img-options img {
+        margin-top: 2rem;
+        margin-right: 2rem;
+        width: 22.5%;
+    }
+
+    @media (max-width: 858px){
+    .img-options img {
+        margin-top: 2rem;
+        margin-right: 0.5rem;
+        width: 28%;
+    }
+}
+
+    @media screen and (max-width: 858px) {
+        .progress-bar {
+            width: 100%;
+        }
+
+        .progress {
+            width: 180%;
+            margin-left: -4.2rem;
+        }
+     
+        .bg-text {
+            top: 32%;
+            left: 46.3%;
+        }
+
+        .mid-right {
+            margin-bottom: 8rem;
+        }
+        .text-options img {
+            margin-left: 4rem;
+            width: 60%;
+
+        }
+        .mid-right h4 {
+            font-size: 16px;
+        }
+    }
+       
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><img src="assets/images/upskillwhite.png"></label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">TRAINNING</a></li>
+        <li><a href="#">VIDEO LESSONS</a></li>
+        <li><a href="#">EARN WITH UPSKILL</a></li>
+        <li><a href="#signin" class="signin active" ><i class="fa fa-fw fa-user-circle"></i>SIGN IN</a></li>
+        <li><button class="signup">SIGN UP</button></li>
+      </ul>
+    </nav>
+
+
+    <div class="mid-part" >
+      <div class="mid-left" style="">
+        <img src="assets/images/adobe-photoshop-2020-latest-version-free-download-for-windows-10.png">
+        <div class="bg-text">
+          <div class="progress">
+            <div class="progress-bar"></div>
+          </div>
+          <button class="design">Graphic Design</button>
+          <h3>Photoshop Quiz<br>Questions And Answers</h3>
+          <p>A short quiz to test how well you know<br>Adobe Photoshop</p>
+          <div class="bottom-part">
+          <div class="bottom-left">
+            <h6>By Bappi Ashraf</h6>
+            <h6>Oct 9th, 06:03:11 PM</h6>
+          </div>
+          <div class="social">
+            <a href="#facebook"><img src="assets/images/facebook-square-brands.svg"></a>
+            <a href="#linkedin"><img src="assets/images/linkedin-brands.svg"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+      <div class="mid-right" >
+
+        <h3>Review Answers</h3>
+
+        <h5>Question 1 <mark>/ 10</mark></h5>
+        <h4>This is the default selection setting on the<br>toolbar. With this you can make a selection of<br>any rectangular size and shape.</h4>
+        <div class="text-options">
+          <input class="option-btn wrong"  value="Rectangular marquee tool">
+          <span class="cross">X</span>
+          <input class="option-btn active"  value="Elliptical marquee tool">
+          <span class="checkmark checkmark_tick_text">
+            <div class="checkmark_circle"></div>
+            <div class="checkmark_stem"></div>
+            <div class="checkmark_kick"></div>
+          </span>
+          <input class="option-btn"  value="Single row">
+        </div>
+    
+
+
+        <h5>Question 2 <mark>/ 10</mark></h5>
+        <h4>Which one is Lasso Tool</h4>
+        <div class="img-options">
+          <img src="assets/images/chris-liverani-rD2dc_2S3i0-unsplash.png">
+          <img src="assets/images/oriento-0dg-EfHgA8Q-unsplash.png">
+          <span class="cross cross_img">X</span>
+          <img src="assets/images/images (1).png">
+          <span class="checkmark checkmark_tick_img">
+            <div class="checkmark_circle"></div>
+            <div class="checkmark_stem"></div>
+            <div class="checkmark_kick"></div>
+          </span>
+        </div>
+
+
+        <h5>Question 3 <mark>/ 10</mark></h5>
+        <h4>Why would you get this pop up?</h4>
+        <div class="text-options">
+          <img src="assets/images/1793223770.png">
+          <input class="option-btn active"  value="The layer you are trying to work on is locked">
+          <span class="checkmark checkmark_tick_text">
+            <div class="checkmark_circle"></div>
+            <div class="checkmark_stem"></div>
+            <div class="checkmark_kick"></div>
+          </span>
+          <input class="option-btn"  value="Doesn't matter just close it and try again">
+          <input class="option-btn"  value="Because photoshop is broken">
+        </div>
+
+
+        <h5>Question 4 <mark>/ 10</mark></h5>
+        <h4>This is the default selection setting on the<br>toolbar. With this you can make a selection of<br>any rectangular size and shape.</h4>
+        <div class="text-options">
+          <input class="option-btn wrong"  value="Rectangular marquee tool">
+          <span class="cross">X</span>
+          <input class="option-btn active"  value="Elliptical marquee tool">
+          <span class="checkmark checkmark_tick_text">
+            <div class="checkmark_circle"></div>
+            <div class="checkmark_stem"></div>
+            <div class="checkmark_kick"></div>
+          </span>
+          <input class="option-btn"  value="Single row">
+        </div>
+
+
+        <h5>Question 5 <mark>/ 10</mark></h5>
+        <h4>Which one is Lasso Tool</h4>
+        <div class="img-options">
+          <img src="assets/images/chris-liverani-rD2dc_2S3i0-unsplash.png">
+          <img src="assets/images/oriento-0dg-EfHgA8Q-unsplash.png">
+          <span class="cross cross_img">X</span>
+          <img src="assets/images/images (1).png">
+          <span class="checkmark checkmark_tick_img">
+            <div class="checkmark_circle"></div>
+            <div class="checkmark_stem"></div>
+            <div class="checkmark_kick"></div>
+          </span>
+        </div>
+
+
+        <h5>Question 6 <mark>/ 10</mark></h5>
+        <h4>Why would you get this pop up?</h4>
+        <div class="text-options">
+          <img src="assets/images/1793223770.png">
+          <input class="option-btn active"  value="The layer you are trying to work on is locked">
+          <span class="checkmark checkmark_tick_text">
+            <div class="checkmark_circle"></div>
+            <div class="checkmark_stem"></div>
+            <div class="checkmark_kick"></div>
+          </span>
+          <input class="option-btn"  value="Doesn't matter just close it and try again">
+          <input class="option-btn"  value="Because photoshop is broken">
+        </div>
+
+
+        <h5>Question 7 <mark>/ 10</mark></h5>
+        <h4>This is the default selection setting on the<br>toolbar. With this you can make a selection of<br>any rectangular size and shape.</h4>
+        <div class="text-options">
+          <input class="option-btn"  value="Rectangular marquee tool">
+          <input class="option-btn active"  value="Elliptical marquee tool">
+          <span class="checkmark checkmark_tick_text">
+            <div class="checkmark_circle"></div>
+            <div class="checkmark_stem"></div>
+            <div class="checkmark_kick"></div>
+          </span>
+          <input class="option-btn"  value="Single row">
+        </div>
+
+
+        <h5>Question 8 <mark>/ 10</mark></h5>
+        <h4>This is the default selection setting on the<br>toolbar. With this you can make a selection of<br>any rectangular size and shape.</h4>
+        <div class="text-options">
+          <input class="option-btn wrong"  value="Rectangular marquee tool">
+          <span class="cross">X</span>
+          <input class="option-btn active"  value="Elliptical marquee tool">
+          <span class="checkmark checkmark_tick_text">
+            <div class="checkmark_circle"></div>
+            <div class="checkmark_stem"></div>
+            <div class="checkmark_kick"></div>
+          </span>
+          <input class="option-btn"  value="Single row">
+        </div>
+
+
+
+        <h5>Question 9 <mark>/ 10</mark></h5>
+        <h4>This is the default selection setting on the<br>toolbar. With this you can make a selection of<br>any rectangular size and shape.</h4>
+        <div class="text-options">
+          <input class="option-btn"  value="Rectangular marquee tool">
+          <input class="option-btn active"  value="Elliptical marquee tool">
+          <span class="checkmark checkmark_tick_text">
+            <div class="checkmark_circle"></div>
+            <div class="checkmark_stem"></div>
+            <div class="checkmark_kick"></div>
+          </span>
+          <input class="option-btn wrong"  value="Single row">
+          <span class="cross">X</span>
+        </div>
+
+
+        <h5>Question 10 <mark>/ 10</mark></h5>
+        <h4>This is the default selection setting on the<br>toolbar. With this you can make a selection of<br>any rectangular size and shape.</h4>
+        <div class="text-options">
+          <input class="option-btn wrong"  value="Rectangular marquee tool">
+          <span class="cross">X</span>
+          <input class="option-btn"  value="Elliptical marquee tool">
+          <input class="option-btn active"  value="Single row">
+          <span class="checkmark checkmark_tick_text">
+            <div class="checkmark_circle"></div>
+            <div class="checkmark_stem"></div>
+            <div class="checkmark_kick"></div>
+          </span>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+    </div>
+
+    <div class="footer">
+
+           
+               <div class="card" id="top-left">
+                  
+                       <h3>About us</h3>
+                       <p>Upskill is a peer to peer skill sharing platform. It enables individuals and organizations to share skills and exchange technical knowledge to bridge the skills gap in Bangladesh.<p>
+                        <img src="assets/images/ict.png">
+               </div>
+               <div class="card" id="bottom-right">
+                   
+                       <h3>Helpful Links</h3>
+                       <p>FAQ</p>
+                       <p>Terms and Conditions</p>
+                       <p>Privacy Statement</p>
+                       <p>About Upskill</p>
+
+               </div>
+               <div class="card" id="bottom-left">
+             
+                       <h3>CONTACT</h3>
+                       <p>Upskill Training Center<br>Flat- 4B, House- 516/3, Lane- 10<br>Baridhara DOHS
+                       <p>01727 234132</p>
+                       <p>sanan.upskill@gmail.com</p>
+
+               </div>
+           
+               <div class="card" id="top-right">
+              
+                     <h3 style="margin: -0.1rem 0 1rem -0.1rem;">SUSCRIBE TO OUR NEWSLETTER</h3>
+                     <form action="/action_page.php">
+                        <input type="text" id="email" name="email" placeholder="Type your mail">
+                         <div class="subbutton">
+                            <input type="submit" value="S U B S C R I B E">
+                          </div>
+                     
+                
+                      </form>
+
+             </div>    
+    </div>
+
+
+
+
+
+  </body>
+</html>
